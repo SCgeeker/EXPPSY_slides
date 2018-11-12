@@ -86,12 +86,13 @@ knitr::include_graphics("https://faculty.washington.edu/chudler/java/stroopa.gif
 
 - 反應時間相當短且正確率偏低的參與者
 - 反應時間相當長且正確率偏高的參與者
+- 一位人類參與者的反應時間通常呈現**負偏態分配**：[參考實例](https://osf.io/2dpq6)
 
-```{r SAT, fig.cap="圖解隨機遊走模型，過度追求正確的反應與過度追求速度的反應各為極端。", paged.print=FALSE}
-knitr::include_graphics("../figs/random_walk_model.jpg")
+```{r SAT, fig.cap="圖解隨機遊走模型，過度追求正確的反應(A)與過度追求速度的反應(B)各為極端。", paged.print=FALSE}
+knitr::include_graphics("../EXPPSY_OpenSci/figs/random_walk_model.jpg")
 ```
 
-## 速度與正確率互補 | 分析範例
+## 速度與正確率互補 | 全體參與者資料分析範例
 
 - 以Flanker Task資料為例
 - 範例Excel[下載點](https://osf.io/x82zw/)
