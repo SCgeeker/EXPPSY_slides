@@ -102,3 +102,29 @@ knitr::include_graphics("../EXPPSY_OpenSci/figs/random_walk_model.jpg")
 
 - 詳情請見[OSF wiki](https://osf.io/c462v/wiki/Report02/)
 - 於本週三(11/14)之前完成[課後調查](https://www.psytoolkit.org/cgi-bin/psy2.5.2/survey?s=Bsucu)，下次上課前公佈分組名單。
+
+## 效果量-考驗力-樣本數
+
+```{r PowerCurves, echo=FALSE, message=FALSE, warning=FALSE}
+require(tidyverse)
+
+chrono_pc_df <- read.csv(file = "Chrono_exps_PC.csv")
+theme_set(theme_bw())
+
+chrono_pc_df %>% ggplot(aes(x=nlevels, y=mean, group=paste0(Task,", ",round(delta,2)), color = paste0(Task,", ",round(delta,2)))) + 
+    geom_errorbar(aes(ymin=lower, ymax=upper), width=.1, 
+                  position=position_dodge(0.05)) +
+    geom_line() +
+    geom_point() +
+    labs(title="三項實驗資料估計之效應效果量，預估參與者人數及可達考 驗力",
+         x="參與者人數", y = "考驗力",
+         color = "Task, Effect Size",
+         line = "Task, Effect Size") +
+    scale_color_brewer(palette="Reds") + 
+    theme(legend.title = element_text(size=12),
+                  legend.justification=c(1,0), 
+                  legend.position=c(0.95, 0.05),  
+                  legend.background = element_blank(),
+                  legend.key = element_blank())
+```
+
