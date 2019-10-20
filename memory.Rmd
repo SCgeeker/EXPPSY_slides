@@ -1,0 +1,163 @@
+---
+title: "記憶研究的演進"
+author: "陳紹慶"
+affiliation: "慈濟大學"
+date: 2018-12-3
+bibliography: [book.bib]
+output: 
+  ioslides_presentation:
+    widescreen: true
+    ##smaller: true
+    transition: slower
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+```
+
+## 單元說明
+
+- 概述[可重製的記憶研究](https://scgeeker.github.io/EXPPSY_Opensci/memory.html)
+- 記憶研究主題的演進
+- 記憶研究方法的改良
+
+## 赫曼．艾賓浩斯
+
+<div class="columns-2">
+
+```{r Ebbinghaus, echo=FALSE, fig.cap="", message=FALSE, warning=FALSE, out.width="80%", paged.print=TRUE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/9/92/Ebbinghaus2.jpg")
+```
+
+- 採用隨機分派方法，測量學習無意義音節(kyh,pil,goj)的進展
+- 數百套無意義音節隨機組合，分派至不同日程學習或測試
+- 測量依變項採用能正確覆誦所花費的次數與時間
+
+</div>
+
+## 學習曲線 {.flexbox .vcenter}
+
+```{r learning-curve, echo=FALSE, fig.cap="學習曲線紀錄範例。", message=FALSE, warning=FALSE, paged.print=TRUE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Alanf777_Lcd_fig01.png/640px-Alanf777_Lcd_fig01.png")
+```
+
+## 間隔重覆 {.flexbox .vcenter}
+
+```{r forgetting-curve, echo=FALSE, fig.cap="遺忘曲線示意圖。取自維基百科。", message=FALSE, warning=FALSE, paged.print=TRUE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ForgettingCurve.svg/500px-ForgettingCurve.svg.png")
+```
+
+## 現代版記憶實驗
+
+體驗實驗網址：https://www.psytoolkit.org/cgi-bin/psy2.5.2/survey?s=aD3Kz
+
+## 記憶系統與歷程 {.flexbox .vcenter}
+
+```{r memory-system, echo=FALSE, fig.cap="Atkinson 與 Shiffrin(1968)提出的記憶系統模型。", message=FALSE, warning=FALSE, paged.print=TRUE}
+knitr::include_graphics("http://web.mnstate.edu/malonech/images/Sensor6.jpg")
+```
+
+## 感覺記憶登錄
+
+<div class="columns-2">
+
+```{r partial-report-method, echo=FALSE, fig.cap="Sperling部分報告實驗程序。取自維基百科。", message=FALSE, warning=FALSE, out.width="50%", paged.print=TRUE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/e/e7/Sperling%27s_Partial_Report_Paradigm.jpg")
+```
+
+```{r partial-report-result, echo=FALSE, fig.cap="Sperling部分報告實驗結果。", message=FALSE, warning=FALSE, out.width="65%", paged.print=TRUE}
+knitr::include_graphics("http://web.mnstate.edu/malonech/images/image006.jpg")
+```
+
+</div>
+
+## 序列位置效應 {.flexbox .vcenter} 
+
+@murdockSerialPositionEffect1962
+
+```{r figserial, echo=FALSE, fig.show='hold', fig.cap="典型列表學習實驗的序列位置曲線。取自Zwaan et al.(2017)附錄。", message=FALSE, warning=FALSE, paged.print=TRUE}
+knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_OpenSci/figs/9RP_Serial_Same_Curve.png")
+```
+
+## 間隔效應 {.flexbox .vcenter} 
+
+@greeneSpacingEffectsMemory1989
+
+```{r spacing-exp1, echo=FALSE, fig.cap="重製Greene(1989)之實驗1結果曲線圖。", fig.show='hold', message=FALSE, warning=FALSE, out.width='70%', paged.print=TRUE}
+require(ggplot2)
+require(dplyr)
+
+data.frame(
+  Spacing = rep(c(0,rep(c(0,1,2,4,8,16),3)),2),
+  Frequency = rep(rep(1:4,c(1,rep(6,3))),2),
+  Prop = c(.3, 
+            .5, .51, .52, .56, .59, .61, 
+            .57, .59, .61, .62, .65, .65, 
+            .60, .61, .63, .64, .66, .66,
+           .1,
+           .19,.20,.22,.28,.30,.32,
+           .21,.28,.22,.21,.28,.30,
+           .24,.31,.34,.39,.37,.41),
+  Condition = rep(c("事先知道有測試","事先不知有測試"),each = 19)
+) %>%
+  ggplot(aes(x = Spacing, y = Prop)) +
+         geom_point(aes(colour = as.factor(Frequency) )) +
+         geom_line(aes(group = Frequency)) +
+         labs(colour = "項目學習次數") +
+         ylab("報告正確比例") +
+         xlab("間隔項目數量") +
+         xlim(0,16) +
+         ylim(0,1) + 
+         theme_bw() +
+         facet_grid(cols = vars(Condition))
+```
+
+## 記憶錯覺
+
+@roedigerCreatingFalseMemories1995
+
+| 測試項目 | 列表安排 | 項目數目 | (R)再認且確認學過(%) | (K)再認有印象(%) | 總再認率(%) |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| | **學習後回憶** | 24 | 57 | 22 | 79 |
+| 列表內字詞 | 學習後算術 | 24 | 41 | 24 | 65 |
+| | 未學習 | 24 | 2 | 9 | 11 |
+| | **學習後回憶** | 8 | 58 | 23 | 81 |
+| 列表關鍵詞 | 學習後算術 | 8 | 38 | 34 | 72 |
+| | 未學習 | 8 | 3 | 13 | 16 |
+
+## 記憶實驗效應-考驗力-樣本數
+
+
+```{r PowerCurves, echo=FALSE, message=FALSE, warning=FALSE}
+require(tidyverse)
+
+memory_pc_df <- read.csv(file = "Memory_exps_PC.csv")
+theme_set(theme_bw())
+
+memory_pc_df %>% ggplot(aes(x=nlevels, y=mean, group=paste0(Task,", ",round(delta,2)), color = paste0(Task,", ",round(delta,2)))) + 
+    geom_errorbar(aes(ymin=lower, ymax=upper), width=.1, 
+                  position=position_dodge(0.05)) +
+    geom_line() +
+    geom_point() +
+    labs(title="三項實驗資料估計之效應效果量，預估參與者人數及可達考驗力",
+         x="參與者人數", y = "考驗力",
+         color = "Task, Effect Size",
+         line = "Task, Effect Size") +
+    geom_hline(aes(yintercept=0.8) ) +
+    scale_color_brewer(type = 'div', palette="Spectral") + 
+    theme(legend.title = element_text(size=12),
+                  legend.justification=c(1,0), 
+                  legend.position=c(0.95, 0.05),  
+                  legend.background = element_blank(),
+                  legend.key = element_blank())
+```
+
+## 重製專案說明
+
+- 詳情請見[OSF wiki](https://osf.io/c462v/wiki/Report03/)
+- 於本週三(12/5)之前完成[課後調查](https://www.psytoolkit.org/cgi-bin/psy2.5.2/survey?s=Bsucu)，下次上課前公佈分組名單。
+
+## 參考文獻
