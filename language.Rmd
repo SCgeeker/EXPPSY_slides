@@ -137,7 +137,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/2/2b/Sem
 - 參考[習作](https://scgeeker.github.io/EXPPSY_Opensci/language.html#lang_practice)
 
 
-- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @meyerFacilitationRecognizingPairs1971 的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](https://osf.io/bw73j/)，探討兩項研究測量重覆效應的條件差異？
+- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @meyerFacilitationRecognizingPairs1971 的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataAssociativePriming.xlsx)，探討兩項研究測量重覆效應的條件差異？
 
 
 ## 詞頻效應(Word Frequency Effect)
@@ -167,7 +167,7 @@ knitr::include_graphics("https://www.researchgate.net/profile/Marc_Brysbaert/pub
 
 - 參考[習作](https://scgeeker.github.io/EXPPSY_Opensci/language.html#lang_practice)
 
-- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @forsterRepetitionPrimingFrequency1984 的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](https://osf.io/tpdzr/)，探討兩項研究測量重覆效應的條件差異？
+- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @forsterRepetitionPrimingFrequency1984 的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataRepetitionPriming.xlsx)，探討兩項研究測量重覆效應的條件差異？
 
 ## 句子理解的兩種理論
 
@@ -254,7 +254,7 @@ ggplot(aes(x=matching, y = Mean, color = matching))  +
 
 - 參考[習作](https://scgeeker.github.io/EXPPSY_Opensci/language.html#lang_practice)
 
-- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @zwaanLanguageComprehendersMentally2002  的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](https://osf.io/hyds7/)，探討兩項研究測量重覆效應的條件差異？
+- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @zwaanLanguageComprehendersMentally2002  的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataShapeSimulation.xlsx)，探討兩項研究測量重覆效應的條件差異？
 
 
 ## 參考文獻
