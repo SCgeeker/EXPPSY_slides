@@ -191,17 +191,18 @@ knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/imagery.jp
 
 ## 心像理論的假設
 
-- (**主張**)目標圖中的物件型態，如果越符合從前導句聯想到的心像，讀者越容易做出快且正確的反應。
+- (**主張**)目標圖中的物件型態，如果越符合從前導句聯想到的物件心像，讀者越容易做出快且正確的反應。
 - (**方法**) @zwaanLanguageComprehendersMentally2002 安排數種句子與物件圖像，每一種都有兩組型態相符的配對，交換即成為不相符的配對。經由隨機分派，同一張圖像可獲得相符與不相符的反應資料。比較相符圖像的反應時間與不相符圖像的反應時間。
 - (**預測**) 相符圖像的反應時間會顯著短於不相符圖像的反應時間。
 
 ## 句圖比對作業
 
-
+[簡易示範](./psytoolkit/Chinese_Shape_Verification.html)。請了解程序之後再開始進行12項嘗試實驗。
+<!---
 ```{r task-procedure, echo=FALSE, fig.cap="實驗程序。取自Chen et al. (in submission)", message=FALSE, warning=FALSE, out.width="70%", paged.print=TRUE}
 knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/fig02a.png")
 ```
-
+--->
 
 ## 實驗設計 {.flexbox .vcenter} 
 
