@@ -1,8 +1,9 @@
 ---
-title: "心理計時學概述"
+title: "知覺實驗概述"
 author: "陳紹慶"
 affiliation: "慈濟大學"
-date: 2018-11-12
+date: "`r Sys.Date()`"
+bibliography: D:/core/Version_Controls/books/EXPPSY_OpenSci/book.bib
 output: 
   ioslides_presentation:
     widescreen: true
@@ -21,43 +22,44 @@ knitr::opts_chunk$set(echo = FALSE,
 
 - 概述[可重製的心理計時學研究](https://scgeeker.github.io/EXPPSY_Opensci/chronometry.html)
 
-- 體驗重要實驗
-- 探索重製實驗結果的學習關鍵
+- 體驗與探討經典知覺實驗
+- 運用psytoolkit重製實驗
+- 製作虛擬資料了解速度與正確率互補
 
 ## 心理計時學的起源 {.flexbox}
 
-- 研究人類行為的個別差異
-- 研究測量誤差的本質
+- [想法如何產生動作?](https://today.line.me/tw/pc/article/%E3%80%90%E5%A4%A7%E8%85%A6S01E01%E3%80%91%E5%92%8C%E7%AC%9B%E5%8D%A1%E5%85%92%E4%B8%80%E8%B5%B7%E6%80%9D%E8%80%83%E3%80%8C%E8%88%89%E6%89%8B%E3%80%8D%E6%80%8E%E9%BA%BC%E5%95%9F%E5%8B%95%E2%94%80%E2%94%80%E8%85%A6%E7%A7%91%E5%AD%B8%E7%9A%84%E6%AD%B7%E5%8F%B2%E7%B7%A3%E8%B5%B7%EF%BC%88%E4%B8%80%EF%BC%89-YPL7OL) by 謝伯讓
+- 人類行為的個別差異
+- 人類行為的測量誤差
 
 ## 人類行為的個別差異 {.small}
 
 <div class="columns-2">
-```{r Galton, out.width="70%", fig.cap="", paged.print=TRUE}
+```{r Galton, out.width="60%", fig.cap="法蘭西斯·高爾頓(1822-1911)", paged.print=TRUE}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/e/ec/Francis_Galton_1850s.jpg")
 ```
 
-
-  - 奠定迴歸分析基本觀念與方法
-  - 影響心理測驗學的發展
   - 首位收集與分析巨量人類行為資料的科學家
+  - 奠定迴歸分析基本觀念與方法
+  - 啟發心理計量學的發展
 </div>
 
 ##
 
-```{r myographion, fig.align='center',  fig.cap="赫爾曼．亥姆霍茲製作的肌動描記儀，出自 Cyon, Elie de.(1876)", paged.print=TRUE}
+```{r myographion, fig.align='center',  fig.cap="赫爾曼．海姆赫茲製作的肌動描記儀，出自 Cyon, Elie de.(1876)", paged.print=TRUE}
 knitr::include_graphics("http://vlp.mpiwg-berlin.mpg.de/vlpimages/images/img5811.jpg")
 ```
 
-## 測量誤差的本質
+## 人類行為的測量誤差
 
 ```{r Nevil, fig.align='center', out.width="40%", fig.cap="內維爾·馬斯基林(1732-1811)，英國天文學家", paged.print=TRUE}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/5/59/Maskelyne_Nevil.jpg")
 ```
 
-## 測量誤差的本質 {.small}
+## 人類行為的測量誤差 {.small}
 
 <div class="columns-2">
-```{r Donders, out.width="60%", fig.cap="", paged.print=TRUE}
+```{r Donders, out.width="60%", fig.cap="法蘭西斯庫斯·唐德斯(1818-1889)", paged.print=TRUE}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Donders%2C_Franciscus_Cornelis_%281818_-_1889%29.jpg/306px-Donders%2C_Franciscus_Cornelis_%281818_-_1889%29.jpg")
 ```
 
@@ -66,42 +68,79 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/2/
   - 選擇反應時間 = 察覺 + 區辨 + 選擇 + 執行動作
 </div>
 
-## {.flexbox .vcenter}
+## {.flexbox .vleft}
 
-- [現代版相減法計時實驗](https://www.psytoolkit.org/experiment-library/experiment_deary_liewald.html)(Deary, et al. 2011)
-- 完成後將結果留在[Personal Repository](https://osf.io/cq47j/)的comment。
+- [現代版相減法計時實驗](./psytoolkit/Deary-Liewald.html)(Deary, et al. 2011)
+- 測試結束記得儲存自己的資料
 
 ## Stroop作業
 
-```{r Stroop, out.width="100%", fig.align='center', paged.print=TRUE}
+```{r Stroop, out.width="70%", fig.align='center', paged.print=TRUE}
 knitr::include_graphics("https://faculty.washington.edu/chudler/java/stroopa.gif")
 ```
 
-##  {.flexbox .vcenter}
+- [親自體驗](./psytoolkit/Stroop_Chinese.html)
+- 測試結束記得儲存自己的資料
 
-- [親自體驗](https://www.psytoolkit.org/cgi-bin/psy2.5.2/survey?s=TX3pm)
-- 完成後記得填寫姓名或學號，以便稍後取得自己的資料。
+## Simon作業
 
-## 速度與正確率互補 | 累積許多參與者的資料通常會發現
 
+```{r SIMON, out.width="50%", fig.align='center'}
+knitr::include_graphics("https://scgeeker.github.io/EXPPSY_Opensci/figs/SIMON-Trials.jpg")
+```
+
+## Flanker & Motor Priming
+
+- 親自體驗
+  - [Flanker task](./psytoolkit/flanker.html)
+  - [Motor priming](./psytoolkit/motor_priming_nomask.html)
+
+## 追本溯源
+
+- 檢視 @zwaanParticipantNonnaiveteReproducibility2017 再現的[三項知覺實驗](https://osf.io/5hxge/)，與原始研究的假設及方法的差異。
+  - @craftProcessingSymbolicInformation1970 的[Simon task](https://osf.io/jt2k3/)
+  - @eriksenEffectsNoiseLetters1974 的[Flanker task](https://osf.io/v4xtp/)。
+  - @eimerEffectsMaskedStimuli1998 的[Motor Priming](https://osf.io/9y7ak/)
+
+## 知覺實驗的模擬分析 | 以源始版Simon作業為例
+
+- 解析原始研究的資料收集程序
+  - 整理符合原始研究設計的模擬參數
+  - 以最佳考驗力預估獲得相同發現需要的樣本數
+  - 計算單一參與者貢獻的資料數值及數量
+- [運用模擬函數虛擬可分析資料](./data/sim_CraftSimon1970_rawRT.omv)
+  - 製造多位參與者的原始反應時間及正確與否
+  - 運用原始研究計算方式總計分組樣本分佈
+- [分析模擬資料](./data/sim_CraftSimon1970_meanRT.omv)
+
+## 速度與正確率互補
+
+- 人類參與者的反應時間通常呈現**負偏態分配**：[參考實例](https://osf.io/2dpq6)
 - 反應時間相當短且正確率偏低的參與者
 - 反應時間相當長且正確率偏高的參與者
-- 一位人類參與者的反應時間通常呈現**負偏態分配**：[參考實例](https://osf.io/2dpq6)
 
 ```{r SAT, fig.cap="圖解隨機遊走模型，過度追求正確的反應(A)與過度追求速度的反應(B)各為極端。", paged.print=FALSE}
 knitr::include_graphics("../EXPPSY_OpenSci/figs/random_walk_model.jpg")
 ```
+
+
+## Psytoolkit實驗腳本製作
+
+- [腳本製作筆記](https://hackmd.io/@CSC/S1WIz64IE)
+
+
+<!---
 
 ## 速度與正確率互補 | 全體參與者資料分析範例
 
 - 以Flanker Task資料為例
 - 範例Excel[下載點](https://osf.io/x82zw/)
 
-
 ## 重製專案
 
 - 詳情請見[OSF wiki](https://osf.io/c462v/wiki/Report02/)
 - 於本週三(11/14)之前完成[課後調查](https://www.psytoolkit.org/cgi-bin/psy2.5.2/survey?s=Bsucu)，下次上課前公佈分組名單。
+--->
 
 ## 效果量-考驗力-樣本數
 
