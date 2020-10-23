@@ -19,10 +19,12 @@ knitr::opts_chunk$set(echo = FALSE,
 ```
 
 ## 單元說明
+- 語言心理學的研究範圍
+- 語音知覺與反應時間
 - 心智詞彙網路的理論
 - 詞彙判斷作業的證據
 - 句子理解的理論
-- 型態優勢效應的證據
+- 形態匹配效應的證據
 
 ## 語言心理學四大研究方向
 
@@ -40,6 +42,8 @@ knitr::opts_chunk$set(echo = FALSE,
 - 語法學(Syntax)
 - 語義學(Semantics)
 - 語用學(Pragmatics)
+
+Crash Course的[語言學入門](https://www.youtube.com/playlist?list=PL8dPuuaLjXtP5mp25nStsuDzk2blncJDW)
 
 <!---
 ## 記憶系統再看一眼 {.flexbox .vcenter}
@@ -71,19 +75,28 @@ knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/False_memo
 
 ## 聲帶寬度與音高
 
+參考[維基百科：聲帶](https://en.wikipedia.org/wiki/Vocal_cords)
+
 ![](https://upload.wikimedia.org/wikipedia/commons/b/bd/Gray1204.png)
 
 
 ## 人類的發聲器官
 
-|![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Places_of_articulation.svg/500px-Places_of_articulation.svg.png)|
-|:---:|
+參考[維基百科：發聲器官](https://en.wikipedia.org/wiki/Articulatory_phonetics)
+
+```{r VOCAL, echo=FALSE, fig.cap="", message=FALSE, warning=FALSE, out.height="50%", paged.print=TRUE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Places_of_articulation.svg/500px-Places_of_articulation.svg.png")
+```
 
 ## 人類發聲的反應時間計時
 
 - Donders(1967~1968) 紀錄參與者A發出聲音，參與者B立刻跟隨發聲的時間差，測量「想說什麼」到「說出什麼」的反應時間
 
-![](http://www.socsci.ru.nl/ardiroel/Ddata.jpg)
+![](Ddata.jpg)
+
+##
+
+(跳躍一百年)
 
 
 ## 心智詞彙網路(Mental Lexical Network)
@@ -94,7 +107,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/c/cb/Hie
 
 @collinsRetrievalTimeSemantic1969
 
-## 選讀主題文獻
+## 主題文獻
 
 - 關聯性促發效應： @meyerFacilitationRecognizingPairs1971 
   [論文下載](https://osf.io/bukg3/)
@@ -103,9 +116,33 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/c/cb/Hie
 
 ## 詞彙判斷作業
 
-- [促發程序LDT](./psytoolkit/Chinese_priming_LDT.html):測量看過相關字詞後，辨識目標字詞的反應時間，計算關聯性促發效應
-- [單詞版LDT](./psytoolkit/Chinese_word_LDT.html):測量辨識字詞的反應時間，計算詞頻效應
-- [重覆程序LDT](./psytoolkit/Chinese_word_RP_LDT.html):測量辨識字詞的反應時間，有兩個段落，計算重覆效應
+- [促發程序LDT](./psytoolkit/Chinese_priming_LDT.html):測量看過相關字詞後，辨識目標字詞的反應時間，測量關聯性促發效應
+- [單詞版LDT](./psytoolkit/Chinese_word_LDT.html):測量辨識字詞的反應時間，測量詞頻效應
+- [重覆程序LDT](./psytoolkit/Chinese_word_RP_LDT.html):測量辨識字詞的反應時間，有兩個段落，測量重覆效應
+
+(結束後自行複製貼上到Excel或google sheet)  
+(促發程序LDT實驗分析資料示範請見下一張)
+
+## 原始資料範例
+
+![](SP_rawdata_demo.png)
+
+## 個別受試者資料處理
+
+in google sheet: `Data -> Pivot Table`  
+
+`Rows`: condition  
+`Values`: RT  
+`Filters`: correct = 1  
+
+![](SP_single_data.png)
+
+## 多位受試者資料處理
+
+來源： @zwaanParticipantNonnaiveteReproducibility2017
+
+![](SP_analytic_RT_demo.png)
+
 
 ## 擴散激發(Spreading Activation)
 
@@ -137,7 +174,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/2/2b/Sem
 - 參考[習作](https://scgeeker.github.io/EXPPSY_Opensci/language.html#lang_practice)
 
 
-- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @meyerFacilitationRecognizingPairs1971 的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataAssociativePriming.xlsx)，探討兩項研究測量重覆效應的條件差異？
+- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @meyerFacilitationRecognizingPairs1971 的那一個實驗？運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataAssociativePriming.xlsx)，探討兩項研究測量重覆效應的條件差異？
 
 
 ## 詞頻效應(Word Frequency Effect)
@@ -167,7 +204,7 @@ knitr::include_graphics("https://www.researchgate.net/profile/Marc_Brysbaert/pub
 
 - 參考[習作](https://scgeeker.github.io/EXPPSY_Opensci/language.html#lang_practice)
 
-- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @forsterRepetitionPrimingFrequency1984 的那一個實驗？請運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataRepetitionPriming.xlsx)，探討兩項研究測量重覆效應的條件差異？
+- @zwaanParticipantNonnaiveteReproducibility2017 進行的重覆效應來自 @forsterRepetitionPrimingFrequency1984 的那一個實驗？運用Replication Plan格式檢視兩項研究的細節。請嘗試運用 @zwaanParticipantNonnaiveteReproducibility2017 的[公開資料](./data/AllDataRepetitionPriming.xlsx)，探討兩項研究測量重覆效應的條件差異？
 
 ## 句子理解的兩種理論
 
@@ -183,7 +220,7 @@ knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/imagery.jp
 
 </div>
 
-## 選讀主題文獻
+## 主題文獻
 
 - 形態匹配效應： @zwaanLanguageComprehendersMentally2002 
   [論文下載](https://osf.io/7y5fb/)
