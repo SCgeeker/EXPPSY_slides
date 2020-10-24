@@ -133,7 +133,7 @@ in google sheet: `Data -> Pivot Table`
 
 `Rows`: condition  
 `Values`: RT  
-`Filters`: correct = 1  
+`Filters`: correct = 1  = 
 
 ![](SP_single_data.png)
 

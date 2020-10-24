@@ -1,0 +1,72 @@
+---
+title: "心理學實驗法學習路線"
+author: "陳紹慶"
+date: "`r Sys.Date()`"
+output: 
+  ioslides_presentation:
+    widescreen: true
+    ##smaller: true
+    transition: slower
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 兩種學習路線
+
+1. 更新學習資訊 -> 整合分析專案(Meta science)
+2. 重製實驗程序 -> 規劃重製研究(Replication)
+
+## 參考來源
+
+**[Mass Replications & Extensions (CORE)](https://mgto.org/pre-registered-replications/)**
+
+課程設計：香港大學心理學系 Gilad Feldman
+
+## 路線任務(第一學期)
+
+## 
+
+<div class="columns-2">
+
+#### 更新學習資訊
+- 背景知識整理
+- 符合設計的樣本數估計
+- 分析方法選擇策略
+
+#### 重製實驗程序
+- 實驗設計軟體
+- 實現隨機方法的方案
+- 實驗資料管理
+
+</div>
+
+## 重製工作坊上課流程
+
+1. 解說主題實驗背景、收集資訊方向、實驗軟體學習資源
+2. Meta -> Replication：解說收集成果、討論重製實驗的重點
+3. Replication -> Meta：展示初步成果、整理設計實驗的關鍵
+4. 總結重製專案學習成果
+
+- 兩次工作坊主題由同學決定；實驗軟體分別是[Psytoolkit](https://www.psytoolkit.org/)與[OpenSesame](https://osdoc.cogsci.nl/)
+
+
+## 路線任務(第二學期)
+
+## 
+
+<div class="columns-2">
+
+#### Meta Science
+- 挑選整合分析主題
+- 學習合適的分析方法
+- 分析計畫預先註冊
+
+#### Replication
+- 挑選重製研究主題
+- 學習合適的重製方法
+- 實驗計畫預先註冊
+
+</div>
