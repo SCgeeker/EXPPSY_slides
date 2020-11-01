@@ -3,7 +3,7 @@ title: "知覺實驗概述"
 author: "陳紹慶"
 affiliation: "慈濟大學"
 date: "`r Sys.Date()`"
-bibliography: D:/core/Version_Controls/books/EXPPSY_OpenSci/book.bib
+#bibliography: D:/core/Version_Controls/books/EXPPSY_OpenSci/book.bib
 output: 
   ioslides_presentation:
     widescreen: true
@@ -20,11 +20,10 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ## 單元說明
 
-- 概述[可重製的心理計時學研究](https://scgeeker.github.io/EXPPSY_Opensci/chronometry.html)
-
+- 概述[心理計時學研究](https://scgeeker.github.io/EXPPSY_Opensci/chronometry.html)
 - 體驗與探討經典知覺實驗
-- 運用psytoolkit重製實驗
 - 製作虛擬資料了解速度與正確率互補
+- 運用psytoolkit重製實驗
 
 ## 心理計時學的起源 {.flexbox}
 
@@ -42,15 +41,16 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/e/ec/Fra
   - 首位收集與分析巨量人類行為資料的科學家
   - 奠定迴歸分析基本觀念與方法
   - 啟發心理計量學的發展
-</div>
 
-##
-
-```{r myographion, fig.align='center',  fig.cap="赫爾曼．海姆赫茲製作的肌動描記儀，出自 Cyon, Elie de.(1876)", paged.print=TRUE}
-knitr::include_graphics("http://vlp.mpiwg-berlin.mpg.de/vlpimages/images/img5811.jpg")
+```{r myographion, fig.align='center', out.width="20%",   paged.print=FALSE}
+#fig.cap="赫爾曼．海姆赫茲製作的肌動描記儀，出自 Cyon, Elie de.(1876)",
+knitr::include_graphics("img5811.jpg")
 ```
 
+</div>
+
 ## 人類行為的測量誤差
+
 
 ```{r Nevil, fig.align='center', out.width="40%", fig.cap="內維爾·馬斯基林(1732-1811)，英國天文學家", paged.print=TRUE}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/5/59/Maskelyne_Nevil.jpg")
@@ -71,7 +71,24 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/2/
 ## {.flexbox .vleft}
 
 - [現代版相減法計時實驗](./psytoolkit/Deary-Liewald.html)(Deary, et al. 2011)
-- 測試結束記得儲存自己的資料
+
+```{r task_intro, out.width="40%", paged.print=TRUE}
+knitr::include_graphics(c("simple_intro.png","choice_intro.png"))
+```
+
+## 分析自己的反應資料 {.small}
+
+1.選取並複製資料
+```{r demo01, fig.align='center', out.width="30%", paged.print=TRUE}
+knitr::include_graphics("chrono_analysis_demo01.jpg")
+```
+
+2.到文字編輯器貼上並編輯標題，再另存檔案
+```{r demo02, fig.align='center', out.width="30%", paged.print=TRUE}
+knitr::include_graphics("chrono_analysis_demo02.jpg")
+```
+
+3.使用[JASP](./data/DL_data.jasp) / jamovi處理資料
 
 ## Stroop作業
 
@@ -97,10 +114,10 @@ knitr::include_graphics("https://scgeeker.github.io/EXPPSY_Opensci/figs/SIMON-Tr
 
 ## 追本溯源
 
-- 檢視 @zwaanParticipantNonnaiveteReproducibility2017 再現的[三項知覺實驗](https://osf.io/5hxge/)，與原始研究的假設及方法的差異。
-  - @craftProcessingSymbolicInformation1970 的[Simon task](https://osf.io/jt2k3/)
-  - @eriksenEffectsNoiseLetters1974 的[Flanker task](https://osf.io/v4xtp/)。
-  - @eimerEffectsMaskedStimuli1998 的[Motor Priming](https://osf.io/9y7ak/)
+- 檢視Zwaan et al. (2017) 再現的[三項知覺實驗](https://osf.io/5hxge/)，與原始研究的假設及方法的差異。
+  - Craft and Simon (1970) 的[Simon task](https://osf.io/jt2k3/)
+  - Eriksen and Eriksen (1974) 的[Flanker task](https://osf.io/v4xtp/)。
+  - Eimer and Schlaghecken (1998) 的[Motor Priming](https://osf.io/9y7ak/)
 
 ## 知覺實驗的模擬分析 | 以源始版Simon作業為例
 
