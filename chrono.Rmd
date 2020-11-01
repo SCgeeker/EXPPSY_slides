@@ -97,7 +97,10 @@ knitr::include_graphics("https://faculty.washington.edu/chudler/java/stroopa.gif
 ```
 
 - [親自體驗](./psytoolkit/Stroop_Chinese.html)
-- 測試結束記得儲存自己的資料
+- 測試結束的資料欄位
+
+|block|word|color|contigency|key|correct|RT|
+|---|---|---|---|---|---|---|
 
 ## Simon作業
 
@@ -110,7 +113,14 @@ knitr::include_graphics("https://scgeeker.github.io/EXPPSY_Opensci/figs/SIMON-Tr
 
 - 親自體驗
   - [Flanker task](./psytoolkit/flanker.html)
+  
+  |stimuli| condtion | correct| RT|
+  |---|---|---|---|
+  
   - [Motor priming](./psytoolkit/motor_priming_nomask.html)
+  
+  |probe| target | condtion| correct | RT|
+  |---|---|---|---|---|
 
 ## 追本溯源
 
