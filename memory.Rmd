@@ -2,7 +2,7 @@
 title: "記憶研究的演進"
 author: "陳紹慶"
 affiliation: "慈濟大學"
-date: 2018-12-3
+date: "`r Sys.Date()`"
 bibliography: [book.bib]
 output: 
   ioslides_presentation:
@@ -20,11 +20,38 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ## 單元說明
 
+- 開場：自由回憶的回溯促進
 - 概述[可重製的記憶研究](https://scgeeker.github.io/EXPPSY_Opensci/memory.html)
 - 記憶研究主題的演進
 - 記憶研究方法的改良
 
-## 赫曼．艾賓浩斯
+## Deryl Bem: 自由回憶的回溯促進
+
+<div class="columns-2">
+
+
+```{r Bem, echo=FALSE, fig.cap="", message=FALSE, warning=FALSE, out.width="30%", paged.print=TRUE}
+knitr::include_graphics("https://dbem.org/Images/DJB%202010.jpg")
+```
+
+- [Feeling the future](https://www.researchgate.net/publication/49798137_Feeling_the_Future_Experimental_Evidence_for_Anomalous_Retroactive_Influences_on_Cognition_and_Affect)
+
+**參與者內設計的短期記憶實驗**<br/>
+<br/>
+**實驗程序**<br/>
+1. 指導語 $\rightarrow$ 2項刺激搜尋能力調查 $\rightarrow$ 3分鐘休息  
+2. 瀏覽48項實驗刺激(24P,24C) $\rightarrow$ 意外自由回憶  
+3. 24項P刺激歸類作業  
+
+**實驗結果**  
+$DR \% = \frac{[(P - C) \times (P + C)]}{576}$ <br/>
+EXP 8: $DR \% = 2.27 \%, t(99) = 1.92, p = .029,$<br/>$d = 0.19$ <br/>
+EXP 9: $DR \% = 4.21 \%, t(49) = 2.96, p = .002,$<br/>$d = 0.42$
+
+</div>
+
+
+## 赫曼．艾賓浩斯(1850-1909)
 
 <div class="columns-2">
 
@@ -34,14 +61,14 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/9/92/Ebb
 
 - 實驗者自己就是受試者
 - 採用隨機分派方法，測量學習無意義音節(kyh,pil,goj)的進展
-- 數百套無意義音節隨機組合，分派至不同日程學習或測試
-- 測量依變項採用能正確覆誦所花費的次數與時間
+- 數百套無意義音節隨機組合，分派至不同實驗日期學習或測試
+- 依變項：正確覆誦的比率與經過的天數
 
 </div>
 
 ## 學習曲線 {.flexbox .vcenter}
 
-```{r learning-curve, echo=FALSE, fig.cap="學習曲線紀錄範例。", message=FALSE, warning=FALSE, paged.print=TRUE}
+```{r learning-curve, echo=FALSE, fig.cap="學習曲線紀錄範例", message=FALSE, warning=FALSE, paged.print=TRUE}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Alanf777_Lcd_fig01.png/640px-Alanf777_Lcd_fig01.png")
 ```
 
@@ -51,10 +78,10 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/7/
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ForgettingCurve.svg/500px-ForgettingCurve.svg.png")
 ```
 
-## 短期記憶資訊容量: @millerMagicalNumberSeven1956
+## 短期記憶資訊容量: @millerMagicalNumberSeven1956a
 
 - limit of channel capacity for unidimensional stimuli
-  - 2 ~ 4 bits
+  - 2 ~ 4 **bits**
 - limit of channel capacity for multidimensional stimuli
   - Magic number 7
   
@@ -68,7 +95,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/4/
 
 ## 現代版短期記憶實驗範例
 
-- 取自psytoolkit實驗資源庫
+- 取自psytoolkit實驗資源庫，使用滑鼠或平板進行
 - [順向再認作業](https://www.psytoolkit.org/library/experiment_corsi.html) ~ [說明網頁](https://www.psytoolkit.org/library/corsi.html)
 - [逆向再認作業](https://www.psytoolkit.org/library/experiment_backward_corsi.html) ~ [說明網頁](https://www.psytoolkit.org/library/backward_corsi.html)
 
@@ -92,11 +119,15 @@ knitr::include_graphics("http://web.mnstate.edu/malonech/images/image006.jpg")
 
 </div>
 
+## 
+
+**能被重製的記憶實驗**
+
 ## 序列位置效應 {.flexbox .vcenter} 
 
 @murdockSerialPositionEffect1962
 
-[示範程序](https://www.psytoolkit.org/cgi-bin/psy2.6.1/survey?s=AGONz); [問卷腳本](https://osf.io/87zpm/)
+[示範程序](https://www.psytoolkit.org/cgi-bin/psy2.6.1/survey?s=AGONz)(請開擴音或戴耳機); [問卷腳本](https://osf.io/87zpm/)
 
 ```{r figserial, echo=FALSE, fig.show='hold', fig.cap="典型列表學習實驗的序列位置曲線。取自Zwaan et al.(2017)附錄。", message=FALSE, warning=FALSE, paged.print=TRUE}
 knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_OpenSci/figs/9RP_Serial_Same_Curve.png")
@@ -138,10 +169,11 @@ data.frame(
 
 ## DRM記憶錯覺實驗範例
 
-體驗實驗網址：https://www.psytoolkit.org/cgi-bin/psy2.6.1/survey?s=aD3Kz
+[體驗實驗](https://www.psytoolkit.org/cgi-bin/psy2.6.1/survey?s=aD3Kz) (請開擴音或戴耳機)
 
+<!---
 - [Psytoolkit測驗製作筆記](https://hackmd.io/hm00LyR8RR6VhKSg2uE3Bg#%E7%B7%9A%E4%B8%8A%E5%95%8F%E5%8D%B7)
-
+--->
 
 ## DRM記憶錯覺實驗
 
@@ -155,6 +187,16 @@ data.frame(
 | | **學習後回憶** | 8 | 58 | 23 | 81 |
 | 列表關鍵詞 | 學習後算術 | 8 | 38 | 34 | 72 |
 | | 未學習 | 8 | 3 | 13 | 16 |
+
+
+## 真的有自由回憶的回溯促進嗎？
+
+[Failing the Future](http://dx.plos.org/10.1371/journal.pone.0033423)
+
+
+```{r FailFutrue, echo=FALSE, fig.show='hold', fig.cap="Ritchie, Wiseman, 與French (2012)的重製實驗結果。", out.width='75%', message=FALSE, warning=FALSE, paged.print=TRUE}
+knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/journal.pone.0033423.t001.png")
+```
 
 <!---
 ## 記憶實驗效應-考驗力-樣本數
