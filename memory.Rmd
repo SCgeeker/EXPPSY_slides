@@ -102,7 +102,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/4/
 ## 記憶系統與歷程 {.flexbox .vcenter}
 
 ```{r memory-system, echo=FALSE, fig.cap="Atkinson 與 Shiffrin(1968)提出的記憶系統模型。", message=FALSE, warning=FALSE, paged.print=TRUE}
-knitr::include_graphics("http://web.mnstate.edu/malonech/images/Sensor6.jpg")
+knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/Memory_System.jpg")
 ```
 
 ## 感覺記憶登錄
@@ -114,7 +114,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/e/e7/Spe
 ```
 
 ```{r partial-report-result, echo=FALSE, fig.cap="Sperling部分報告實驗結果。", message=FALSE, warning=FALSE, out.width="65%", paged.print=TRUE}
-knitr::include_graphics("http://web.mnstate.edu/malonech/images/image006.jpg")
+knitr::include_graphics("D:/core/Version_Controls/books/EXPPSY_slides/Spearling_result.jpg")
 ```
 
 </div>
