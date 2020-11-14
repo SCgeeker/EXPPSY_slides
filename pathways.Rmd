@@ -27,16 +27,26 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 路線任務(第一學期)
 
+## 重製實驗賓果
+
+|知覺|記憶|語言|
+|---|---|---|
+|Simon效應<br>[Craft and Simon (1970)](https://osf.io/jt2k3/)|[序列位置效應](https://www.psytoolkit.org/cgi-bin/psy2.6.1/survey?s=AGONz)<br>[Murdock Jr. (1962)](https://osf.io/ef7vt/)|[語義促發效應](./psytoolkit/Chinese_priming_LDT.html)<br>[Meyer and Schvaneveldt (1971)](https://osf.io/bukg3/)|
+|[Flanker效應](./psytoolkit/flanker.html)<br>[Eriksen and Eriksen (1974)](https://osf.io/v4xtp/)|間隔效應<br>[Greene (1989)](https://osf.io/5kgmn/)<br>|[重覆效應](./psytoolkit/Chinese_word_RP_LDT.html)<br>[Forster and Davis (1984)](https://osf.io/xp59g/)|
+|[動作促發效應](./psytoolkit/motor_priming_nomask.html)<br>[Eimer and Schlaghecken (1998)](https://osf.io/9y7ak/)|[記憶錯覺](https://www.psytoolkit.org/cgi-bin/psy2.6.1/survey?s=aD3Kz)<br>[Roediger and McDermott (1995)](https://osf.io/qp7x5/)|[形狀匹配效應](./psytoolkit/Chinese_Shape_Verification.html)<br>[Zwaan et al. (2002)](https://osf.io/7y5fb/)|
+
+- 各項實驗簡介請見[Zwaan et al. (2017)](https://osf.io/5hxge/) Table 1
+
 ## 
 
 <div class="columns-2">
 
-#### 更新學習資訊
+#### 更新學習資訊(Meta)
 - 背景知識整理
 - 符合設計的樣本數估計
 - 分析方法選擇策略
 
-#### 重製實驗程序
+#### 重製實驗程序(Replication)
 - 實驗設計軟體
 - 實現隨機方法的方案
 - 實驗資料管理
@@ -45,9 +55,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## 重製工作坊上課流程
 
-1. 解說主題實驗背景、收集資訊方向、實驗軟體學習資源
-2. Meta -> Replication：解說收集成果、討論重製實驗的重點
-3. Replication -> Meta：展示初步成果、整理設計實驗的關鍵
+1. **文獻探討**：解說主題實驗背景、收集資訊方向、實驗軟體學習資源
+2. Meta -> Replication：解說閱讀成果、討論重製實驗的重點
+3. Replication -> Meta：展示初版重製腳本、整理設計實驗的關鍵
 4. 總結重製專案學習成果
 
 - 兩次工作坊主題由同學決定；實驗軟體分別是[Psytoolkit](https://www.psytoolkit.org/)與[OpenSesame](https://osdoc.cogsci.nl/)
