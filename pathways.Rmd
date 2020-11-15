@@ -56,7 +56,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## 重製工作坊上課流程
 
 1. **文獻探討**：解說主題實驗背景、收集資訊方向、實驗軟體學習資源
-2. Meta -> Replication：解說閱讀成果、討論重製實驗的重點
+2. Meta -> Replication：解說**相關文獻**閱讀成果、討論重製實驗的重點
 3. Replication -> Meta：展示初版重製腳本、整理設計實驗的關鍵
 4. 總結重製專案學習成果
 
